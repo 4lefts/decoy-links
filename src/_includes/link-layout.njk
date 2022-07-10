@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% set css %}
+    {% include "link-styles.css" %}
+  {% endset %}
+  <style>
+    {{css | safe}}
+  </style>
+  <title>{{title}}</title>
+</head>
+<body>
+  <div class="container">
+    <h1>{{title}}</h1> 
+    <ul class="link-grid">
+      {% for link in links %}
+      <li style="color: {{link.color }}; border-color: {{link.color}}">
+        <a href="{{link.url}}" style="color: {{link.color }}">{{link.title}}</a>
+        {% endfor %}
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
