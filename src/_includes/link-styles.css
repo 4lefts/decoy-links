@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 html {
   box-sizing: border-box;
   margin: 0;
@@ -9,13 +11,13 @@ html {
 }
 
 body{
-  font-family: monospace;
+  font-family: 'Varela Round', sans-serif;
   margin: 0;
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
-  background: rgb(170,255,145);
-  background: linear-gradient(162deg, rgba(170,255,145,1) 0%, rgba(164,255,237,1) 100%);
+  background: rgb(73,209,33);
+  background: linear-gradient(162deg, rgba(73,209,33,1) 0%, rgba(128,249,162,1) 100%);
 }
 
 .container{
@@ -25,7 +27,9 @@ body{
 }
 
 h1{
-  font-size: 3em;
+  font-size: 2.3em;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  color: white;
 }
 
 .link-grid{
@@ -38,17 +42,21 @@ h1{
   grid-gap: 1em;
 }
 
-.link-grid li{
+.link-grid a{
   padding: 1em;
   border-style: solid;
-  border-width: 2px 4px 4px 2px;
-  /* border-radius: 5px; */
-  background-color: white;
-  font-size: 2em;
+  border-width: 2px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.85);
+  font-size: 1.5em;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.link-grid li a{
-  text-decoration: none;
+.link-grid a:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color: white;
 }

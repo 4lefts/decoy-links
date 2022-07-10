@@ -17,10 +17,10 @@
     <h1>{{title}}</h1> 
     <ul class="link-grid">
       {% for link in links %}
-      <li style="color: {{link.color }}; border-color: {{link.color}}">
-        <a href="{{link.url}}" style="color: {{link.color }}">{{link.title}}</a>
-        {% endfor %}
-      </li>
+        <a href="{{link.url}}" style="color: {{link.color }}">
+          <li style="color: {{link.color }}; border-color: {{link.color}}">{{link.title}}</li>
+        </a>
+      {% endfor %}
     </ul>
   </div>
 </body>
