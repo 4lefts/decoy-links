@@ -1,5 +1,5 @@
 module.exports = function(eleventyConfig){
-  eleventyConfig.addPassthroughCopy("src/**/*.svg")
+  eleventyConfig.addPassthroughCopy({"src/admin": "admin"})
   return {
     dir: {
       input: "src",
