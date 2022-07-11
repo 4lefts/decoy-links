@@ -14,11 +14,12 @@
 </head>
 <body>
   <div class="container">
-    <h1>{{title}}</h1> 
+    <h1>Decoy Links</h1>
+    <img src="./logo.svg"> 
     <ul class="link-grid">
       {% for link in links %}
-        <a href="{{link.url}}" style="color: {{link.color }}">
-          <li style="color: {{link.color }}; border-color: {{link.color}}">{{link.title}}</li>
+        <a href="{{link.url}}" style="background-color: {{link.color }}">
+          <li>{{link.title}}</li>
         </a>
       {% endfor %}
     </ul>
