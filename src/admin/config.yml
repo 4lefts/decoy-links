@@ -13,11 +13,11 @@ collections:
         name: Decoy Links
         file: "src/index.html"
         fields:
-          - { label: Title, name: title, widget: String }
+          - { label: Title, name: title, widget: string }
           - label: Links
             name: links
             widget: list
             fields:
-              - { label: Title, name: title, widget: String }
-              - { label: Url, name: url, widget: String }
+              - { label: Title, name: title, widget: string }
+              - { label: Url, name: url, widget: string }
               - { label: Colour, name: color, widget: color }
