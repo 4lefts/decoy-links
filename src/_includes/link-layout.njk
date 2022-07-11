@@ -14,8 +14,12 @@
 </head>
 <body>
   <div class="container">
-    <h1>Decoy Links</h1>
-    <img src="./logo.svg"> 
+    <header>
+      <h1>Decoy Links</h1>
+      <a href="https://decoyschool.co.uk">
+        <img src="./logo.svg"> 
+      </a>
+    </header>
     <ul class="link-grid">
       {% for link in links %}
         <a href="{{link.url}}" style="background-color: {{link.color }}">
